@@ -18,9 +18,10 @@
   flex-direction: column;
   align-items: center;
   background-image: url("./assets/very-slightly-blurred-flowering-tree.png");
-  background-position: bottom;
+  background-position: 70% 0%;
   background-size: 180%;
   background-attachment: fixed;
+  z-index: -1000;
   /* background: linear-gradient(33deg, #8f49a2, #529cb7); */
 }
 
