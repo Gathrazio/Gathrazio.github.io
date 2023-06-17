@@ -52,7 +52,6 @@ export default function Body () {
             <Topic>
                 <h1 className="topic-title">Experience</h1>
             </Topic>
-            end body
         </div>
     )
 }

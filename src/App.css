@@ -17,11 +17,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("./assets/very-slightly-blurred-flowering-tree.webp");
-  background-position: center;
-  background-size: 215%;
+  background-image: url("./assets/very-slightly-blurred-flowering-tree.png");
+  background-position: bottom;
+  background-size: 180%;
   background-attachment: fixed;
   /* background: linear-gradient(33deg, #8f49a2, #529cb7); */
+}
+
+.nav-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
 .main-name {
@@ -35,7 +41,7 @@
   justify-content: center;
   align-items: center;
   height: 100px;
-  background-color: rgba(250, 250, 250, 0.172);
+  background-color: rgba(255, 255, 255, 0.449);
 }
 
 .button-wrapper {
@@ -54,14 +60,17 @@
   margin-top: 20px;
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.665);
-  border: 1px solid rgb(0, 0, 0);
+  border: none;
   padding: 8px;
-  background-color: rgba(226, 97, 27, 0.874);
+  background-image: linear-gradient(90deg, #de8912d4, #df269be1);
+  background-position: center;
+  background-size: 150%;
 }
 
 .nav-button:hover {
   cursor: pointer;
   color: white;
+  background-position: left;
   transition: 0.2s;
 }
 
