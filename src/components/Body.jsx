@@ -19,7 +19,7 @@ export default function Body () {
                 <ul className="topic-ul">
                     <li>
                         <IconContext.Provider value={{ className: 'react-icons' }}>
-                            <div className="icon-block">
+                            <div className="icon-block top">
                                 <DiHtml5 />
                                 <DiCss3Full />
                                 <DiJavascript1 />
