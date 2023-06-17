@@ -21,7 +21,8 @@
   background-position: 70% 0%;
   background-size: 180%;
   background-attachment: fixed !important;
-  z-index: -1000;
+  background-size: cover !important;
+  z-index: -1000 !important;
   /* background: linear-gradient(33deg, #8f49a2, #529cb7); */
 }
 
