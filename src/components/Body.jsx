@@ -23,12 +23,11 @@ export default function Body () {
                                 <DiHtml5 />
                                 <DiCss3Full />
                                 <DiJavascript1 />
-                                <DiReact />
                             </div>
                             <div className="icon-block">
+                                <DiReact />
                                 <DiGit />
                                 <DiGithubBadge />
-                                <SiLatex />
                             </div>
                         </IconContext.Provider>
                         <p className="topic-paragraph">
@@ -37,7 +36,10 @@ export default function Body () {
                     </li>
                     <li>
                         <IconContext.Provider value={{ className: 'react-icons' }}>
+                        <div className="icon-block grad">
                             <FaGraduationCap />
+                            <SiLatex />
+                        </div>
                         </IconContext.Provider>
                         <p className="topic-paragraph">
                             I graduated from USU with a Bachelors of Science degree in Mathematics with the Summa Cum Laude disctinction in 2022. I am also close to completing the skills portion of V School's Full Stack JS Web Development program.

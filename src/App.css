@@ -46,7 +46,7 @@
   justify-content: center;
   align-items: center;
   height: 100px;
-  background: linear-gradient(0deg, #83ecda, #f2f2f2);
+  background: linear-gradient(0deg, #e6a00a, #e3cb72, #ffffff);
 }
 
 .button-wrapper {
@@ -142,12 +142,16 @@ hr {
 .icon-block {
   display: flex;
   justify-content: center;
-  width: 90%;
+  width: 55%;
   margin: auto;
 }
 
 .top {
   margin-top: 30px;
+}
+
+.grad {
+  width: 40%;
 }
 
 li{
