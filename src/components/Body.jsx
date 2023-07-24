@@ -1,21 +1,21 @@
 import Topic from './Topic'
 import gradCap from '../assets/grad-cap.png'
-import {DiJavascript1, DiCss3Full, DiHtml5, DiReact, DiGit, DiGithubBadge } from 'react-icons/di'
+import {DiJavascript1, DiCss3Full, DiHtml5, DiReact, DiGit, DiGithubBadge, DiMongodb } from 'react-icons/di'
 import { IconContext } from "react-icons";
 import { FaGraduationCap} from "react-icons/fa";
 import { SiLatex } from "react-icons/si";
 
-export default function Body () {
+export default function Body ({sections}) {
     return (
         <div className="body-wrapper">
             <Topic>
-                <h1 className="topic-title">Who Am I?</h1>
+                <h1 className="topic-title" ref={sections.about}>Who Am I?</h1>
                 <p className="topic-paragraph">
                     My name is Noah and I am a Full Stack JS Web Developer. Though at my current stage it seems unlikely, I aspire to change the world.
                 </p>
             </Topic>
             <Topic>
-                <h1 className="topic-title">Skills & Education</h1>
+                <h1 className="topic-title" ref={sections.skillsAndEducation}>Skills & Education</h1>
                 <ul className="topic-ul">
                     <li>
                         <IconContext.Provider value={{ className: 'react-icons' }}>
@@ -23,22 +23,23 @@ export default function Body () {
                                 <DiHtml5 />
                                 <DiCss3Full />
                                 <DiJavascript1 />
+                                <DiReact />
                             </div>
                             <div className="icon-block">
-                                <DiReact />
+                                <DiMongodb />
+                                <SiLatex />
                                 <DiGit />
                                 <DiGithubBadge />
                             </div>
                         </IconContext.Provider>
                         <p className="topic-paragraph">
-                            I am fluent and up to date with the most recent iterations of Javascript, HTML, and CSS. I have also spent considerable time improving my skills in React and effectively utilizing Git and Github to work on projects. I also have over four years of intense practice in the math typesetting software LaTeX.
+                            I am fluent and up to date with the most recent iterations of Javascript, HTML, and CSS. I have also spent considerable time improving my skills with React, working with MongoDB/Mongoose, and effectively utilizing Git and Github to work on projects. I also have over four years of intense practice in the math typesetting software LaTeX.
                         </p>
                     </li>
                     <li>
                         <IconContext.Provider value={{ className: 'react-icons' }}>
                         <div className="icon-block grad">
                             <FaGraduationCap />
-                            <SiLatex />
                         </div>
                         </IconContext.Provider>
                         <p className="topic-paragraph">
@@ -49,10 +50,7 @@ export default function Body () {
 
             </Topic>
             <Topic>
-                <h1 className="topic-title">Projects</h1>
-            </Topic>
-            <Topic>
-                <h1 className="topic-title">Experience</h1>
+                <h1 className="topic-title" ref={sections.projects}>Projects</h1>
             </Topic>
         </div>
     )
