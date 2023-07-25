@@ -4,6 +4,7 @@ import {DiJavascript1, DiCss3Full, DiHtml5, DiReact, DiGit, DiGithubBadge, DiMon
 import { IconContext } from "react-icons";
 import { FaGraduationCap} from "react-icons/fa";
 import { SiLatex } from "react-icons/si";
+import ProjectBlurb from './ProjectBlurb'
 
 export default function Body ({sections}) {
     return (
@@ -11,7 +12,7 @@ export default function Body ({sections}) {
             <Topic>
                 <h1 className="topic-title" ref={sections.about}>Who Am I?</h1>
                 <p className="topic-paragraph">
-                    My name is Noah and I am a Full Stack JS Web Developer. Though at my current stage it seems unlikely, I aspire to change the world.
+                    I am a Full Stack JS Web Developer. I aspire to change the world. Delve into my <a href="https://github.com/Gathrazio" target="_blank">Github profile</a>.
                 </p>
             </Topic>
             <Topic>
@@ -33,7 +34,7 @@ export default function Body ({sections}) {
                             </div>
                         </IconContext.Provider>
                         <p className="topic-paragraph">
-                            I am fluent and up to date with the most recent iterations of Javascript, HTML, and CSS. I have also spent considerable time improving my skills with React, working with MongoDB/Mongoose, and effectively utilizing Git and Github to work on projects. I also have over four years of intense practice in the math typesetting software LaTeX.
+                            I am fluent with the most recent iterations of Javascript, HTML, and CSS. I have also spent considerable time improving my skills with React, working with MongoDB/Mongoose, and effectively utilizing Git and Github to work on projects. I also have over four years of intense practice in the math typesetting software LaTeX.
                         </p>
                     </li>
                     <li>
@@ -51,6 +52,10 @@ export default function Body ({sections}) {
             </Topic>
             <Topic>
                 <h1 className="topic-title" ref={sections.projects}>Projects</h1>
+                <ProjectBlurb extraClass="" intro="Live full-stack shopping application:" projectName="The Icecream Zone" codeRef="https://github.com/Gathrazio/level-5-full-stack-app"/>
+                <ProjectBlurb extraClass="" intro="Live CSS Zen Garden mimic using native HTML, CSS, and Javascript:" projectName="My Zen Garden" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-two/css-zen-garden"/>
+                <ProjectBlurb extraClass="" intro="Pure Javascript RPG:" projectName="" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-one/colossal-adventure-rpg"/>
+                <ProjectBlurb extraClass="last-project" intro="Caesar Cipher Encryptor/Decryptor Utility:" projectName="" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-three/caesar-cipher"/>
             </Topic>
         </div>
     )

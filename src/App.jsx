@@ -19,7 +19,6 @@ export default function App() {
     <div className="app-wrapper">
       <NavColumn scrollToPart={scrollToPart} sections={{about, skillsAndEducation, projects}}/>
       <Body sections={{about, skillsAndEducation, projects}}/>
-      <Footer />
     </div>
   )
 }
