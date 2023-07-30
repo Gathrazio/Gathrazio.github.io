@@ -207,6 +207,10 @@ li{
   background: #555;
 }
 
+.blurb-buttons-wrapper {
+  margin-top: 10px;
+}
+
 .blurb-wrapper {
   background-color: rgb(42, 136, 213);
   padding: 10px;

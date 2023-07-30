@@ -52,7 +52,8 @@ export default function Body ({sections}) {
             </Topic>
             <Topic>
                 <h1 className="topic-title" ref={sections.projects}>Projects</h1>
-                <ProjectBlurb extraClass="" intro="Live full-stack shopping application:" projectName="The Icecream Zone" codeRef="https://github.com/Gathrazio/level-5-full-stack-app"/>
+                <ProjectBlurb extraClass="" intro="Live MERN stack shopping application:" projectName="The Icecream Zone" codeRef="https://github.com/Gathrazio/level-5-full-stack-app"/>
+                <ProjectBlurb extraClass="" intro="Live MERN stack application with token user authentication:" projectName="Issue Forum" codeRef="https://github.com/Gathrazio/issue-forum" live="https://issue-forum.onrender.com"/>
                 <ProjectBlurb extraClass="" intro="Live CSS Zen Garden mimic using native HTML, CSS, and Javascript:" projectName="My Zen Garden" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-two/css-zen-garden"/>
                 <ProjectBlurb extraClass="" intro="Pure Javascript RPG:" projectName="" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-one/colossal-adventure-rpg"/>
                 <ProjectBlurb extraClass="last-project" intro="Caesar Cipher Encryptor/Decryptor Utility:" projectName="" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-three/caesar-cipher"/>

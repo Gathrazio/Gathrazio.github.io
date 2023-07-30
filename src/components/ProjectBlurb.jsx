@@ -13,7 +13,7 @@ export default function ProjectBlurb (props) {
                 }
             </span>
             <div className="blurb-buttons-wrapper">
-                {props.projectName && <button className="project-button">{props.projectName}</button>}
+                {props.projectName && <button onClick={() => window.open(`${props.live}`,'_blank')} className="project-button">{props.projectName}</button>}
                 <button className="project-button" onClick={() => window.open(`${props.codeRef}`,'_blank')}>View Code</button>
             </div>
         </div>
