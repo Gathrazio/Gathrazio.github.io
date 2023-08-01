@@ -15,6 +15,7 @@ export default function ProjectBlurb (props) {
             <div className="blurb-buttons-wrapper">
                 {props.projectName && <button onClick={() => window.open(`${props.live}`,'_blank')} className="project-button">{props.projectName}</button>}
                 <button className="project-button" onClick={() => window.open(`${props.codeRef}`,'_blank')}>View Code</button>
+                {props.apiDocs && <button className="project-button" onClick={() => window.open(`${props.apiDocs}`, '_blank')}>View API Docs</button>}
             </div>
         </div>
     )
