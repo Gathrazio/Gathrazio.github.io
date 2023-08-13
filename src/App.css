@@ -152,6 +152,8 @@ hr {
 
 .project-button {
   padding: 10px;
+  height: 80px;
+  width: 100%;
   border: none;
   border-radius: 8px;
   transition: 0.1s;
@@ -209,6 +211,8 @@ li{
 
 .blurb-buttons-wrapper {
   margin-top: 10px;
+  width: calc(100% - 5px);
+  display: flex;
 }
 
 .blurb-wrapper {
@@ -236,4 +240,10 @@ li{
 
 .footer-wrapper {
   height: 1000vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .project-button {
+    height: 50px;
+  }
 }
