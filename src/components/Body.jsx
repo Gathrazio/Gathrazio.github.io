@@ -4,6 +4,7 @@ import {DiJavascript1, DiCss3Full, DiHtml5, DiReact, DiGit, DiGithubBadge, DiMon
 import { IconContext } from "react-icons";
 import { FaGraduationCap} from "react-icons/fa";
 import { SiLatex } from "react-icons/si";
+import { FaNodeJs } from 'react-icons/fa'
 import ProjectBlurb from './ProjectBlurb'
 
 export default function Body ({sections}) {
@@ -12,9 +13,10 @@ export default function Body ({sections}) {
             <Topic>
                 <h1 className="topic-title" ref={sections.about}>Who Am I?</h1>
                 <p className="topic-paragraph">
-                    I am a Full Stack JS Web Developer. I aspire to change the world. Delve into my <a href="https://github.com/Gathrazio" target="_blank">Github profile</a>.
+                    I am a Full Stack JS Web Developer with an emphasis on the backend and a rigorous background in pure mathematics. I aspire to change the world. Delve into my <a href="https://github.com/Gathrazio" target="_blank">Github profile</a>.
                 </p>
             </Topic>
+            <hr />
             <Topic>
                 <h1 className="topic-title" ref={sections.skillsAndEducation}>Skills & Education</h1>
                 <ul className="topic-ul">
@@ -24,17 +26,20 @@ export default function Body ({sections}) {
                                 <DiHtml5 />
                                 <DiCss3Full />
                                 <DiJavascript1 />
-                                <DiReact />
                             </div>
-                            <div className="icon-block">
+                            <div className="icon-block center">
+                                <DiReact />
                                 <DiMongodb />
+                                <FaNodeJs /> 
+                            </div>
+                            <div className="icon-block bottom">
                                 <SiLatex />
                                 <DiGit />
                                 <DiGithubBadge />
                             </div>
                         </IconContext.Provider>
                         <p className="topic-paragraph">
-                            I am fluent with the most recent iterations of Javascript, HTML, and CSS. I have also spent considerable time improving my skills with React, working with MongoDB/Mongoose, and effectively utilizing Git and Github to work on projects. I also have over four years of intense practice in the math typesetting software LaTeX.
+                            I am fluent with the most recent iterations of Javascript, HTML, and CSS. I have also spent considerable time improving my skills with React.js, working with various backend technologies (like MongoDB, Node.js, Express.js, JWT authentication), and effectively utilizing Git and Github to work on personal and team projects. I also have over four years of intense practice in the math typesetting software LaTeX, and am fluent in a large swathe of collegiate mathematics. Really everything from statistics, linear algebra, calculus, number theory, discrete mathematics, and topology.
                         </p>
                     </li>
                     <li>
@@ -44,23 +49,25 @@ export default function Body ({sections}) {
                         </div>
                         </IconContext.Provider>
                         <p className="topic-paragraph">
-                            I graduated from USU with a Bachelors of Science degree in Mathematics with the Summa Cum Laude disctinction in 2022. I am also close to completing the skills portion of V School's Full Stack JS Web Development program.
+                            I graduated from USU with a Bachelors of Science degree in Mathematics with the Summa Cum Laude disctinction in 2022. I have also completed the skills portion of V School's Full Stack JS Web Development program.
                         </p>
                     </li>
                 </ul>
-
             </Topic>
+            <hr />
             <Topic>
                 <h1 className="topic-title" ref={sections.projects}>Projects</h1>
                 <p className="topic-paragraph">
-                            The live projects may take approximately 60 seconds to spin up.
+                            The live projects may take approximately 60 seconds to spin up due to the free hosting service's limitations.
                 </p>
-                <ProjectBlurb extraClass="" intro="Live MERN stack, JWT token authenticated social media & messaging service application:" projectName="Circulate" codeRef="https://github.com/Gathrazio/circulate" live="https://circulate.onrender.com"/>
-                <ProjectBlurb extraClass="" intro="Live MERN stack, JWT token authenticated shopping application:" projectName="The Icecream Zone" codeRef="https://github.com/Gathrazio/level-5-full-stack-app" live="https://icecream-zone.onrender.com" apiDocs="https://github.com/Gathrazio/icecream-shop/blob/master/shop-api-documentation.md"/>
-                <ProjectBlurb extraClass="" intro="Live MERN stack, JWT token authenticated issue forum application:" projectName="Issue Forum" codeRef="https://github.com/Gathrazio/issue-forum" live="https://issue-forum.onrender.com"/>
-                <ProjectBlurb extraClass="" intro="Live CSS Zen Garden mimic using native HTML, CSS, and Javascript:" projectName="My Zen Garden" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-two/css-zen-garden" live="https://my-css-zen-garden.onrender.com/"/>
-                <ProjectBlurb extraClass="" intro="Pure Javascript RPG:" projectName="" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-one/colossal-adventure-rpg"/>
-                <ProjectBlurb extraClass="last-project" intro="Caesar Cipher Encryptor/Decryptor Utility:" projectName="" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-three/caesar-cipher"/>
+                <div className="project-blurbs-wrapper">
+                    <ProjectBlurb extraClass="" intro="Live MERN stack, JWT token authenticated social media & messaging service application:" projectName="Circulate" codeRef="https://github.com/Gathrazio/circulate" live="https://circulate.onrender.com"/>
+                    <ProjectBlurb extraClass="" intro="Live MERN stack, JWT token authenticated shopping application:" projectName="The Icecream Zone" codeRef="https://github.com/Gathrazio/level-5-full-stack-app" live="https://icecream-zone.onrender.com" apiDocs="https://github.com/Gathrazio/icecream-shop/blob/master/shop-api-documentation.md"/>
+                    <ProjectBlurb extraClass="" intro="Live MERN stack, JWT token authenticated issue forum application:" projectName="Issue Forum" codeRef="https://github.com/Gathrazio/issue-forum" live="https://issue-forum.onrender.com"/>
+                    <ProjectBlurb extraClass="" intro="Live CSS Zen Garden mimic using native HTML, CSS, and Javascript:" projectName="My Zen Garden" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-two/css-zen-garden" live="https://my-css-zen-garden.onrender.com/"/>
+                    <ProjectBlurb extraClass="" intro="Pure Javascript RPG:" projectName="" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-one/colossal-adventure-rpg"/>
+                    <ProjectBlurb extraClass="last-project" intro="Caesar Cipher Encryptor/Decryptor Utility:" projectName="" codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-three/caesar-cipher"/>
+                </div>
             </Topic>
         </div>
     )

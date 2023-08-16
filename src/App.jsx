@@ -1,6 +1,7 @@
 import NavColumn from './components/NavColumn'
 import Body from './components/Body'
 import Footer from './components/Footer'
+import Titlebar from './components/Titlebar'
 import { useRef } from 'react'
 import './App.css'
 
@@ -17,8 +18,9 @@ export default function App() {
   }
   return (
     <div className="app-wrapper">
-      <NavColumn scrollToPart={scrollToPart} sections={{about, skillsAndEducation, projects}}/>
-      <Body sections={{about, skillsAndEducation, projects}}/>
+        <Titlebar />
+        <NavColumn scrollToPart={scrollToPart} sections={{about, skillsAndEducation, projects}}/>
+        <Body sections={{about, skillsAndEducation, projects}}/>
     </div>
   )
 }

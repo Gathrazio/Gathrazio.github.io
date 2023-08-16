@@ -3,7 +3,7 @@ export default function ProjectBlurb (props) {
 
     return (
         <div className={`blurb-wrapper ${props.extraClass}`}>
-            <span class="intro">
+            <span className="intro">
                 {props.intro.includes("CSS Zen Garden") ?
                 <>
                 Live <a href="http://www.csszengarden.com/" target="_blank">CSS Zen Garden</a> mimic using native HTML, CSS, and Javascript:

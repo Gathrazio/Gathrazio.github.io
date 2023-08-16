@@ -4,24 +4,16 @@
   box-sizing: border-box;
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
+  font-size: 1.1rem;
   color: rgb(36, 36, 36);
 }
 
 .app-wrapper {
+  background-color: rgb(10, 126, 172);
   width: 100%;
 }
 
 /* Nav section */
-
-.nav-column-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(42, 136, 213);
-  z-index: -1000 !important;
-  /* background: linear-gradient(33deg, #8f49a2, #529cb7); */
-}
 
 .nav-logo {
   width: 50px;
@@ -43,6 +35,14 @@
   align-items: center;
   height: 100px;
   background: rgb(101, 177, 200);
+}
+
+.nav-column-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(42, 136, 213);
 }
 
 .button-wrapper {
@@ -80,7 +80,8 @@
 /* Body section */
 
 .body-wrapper {
-  background-color: beige;
+  background-color: rgb(101, 177, 200);
+  padding-bottom: 20px;
 }
 
 .topic-wrapper {
@@ -98,7 +99,6 @@
 hr {
   height: 1px;
   background-color: rgb(0, 0, 0);
-  margin-top: 20px;
   border: none;
 }
 
@@ -115,8 +115,8 @@ hr {
   list-style-type: none;
 }
 
-.topic-ul > * {
-  margin: 3px;
+.last-project {
+  margin-bottom: 0 !important;
 }
 
 /* li:before {
@@ -146,14 +146,15 @@ hr {
 .icon-block {
   display: flex;
   justify-content: center;
-  width: 55%;
+  width: 50%;
   margin: auto;
 }
 
 .project-button {
   padding: 10px;
-  height: 80px;
+  height: 90px;
   width: 100%;
+  font-size: 1.1rem;
   border: none;
   border-radius: 8px;
   transition: 0.1s;
@@ -168,7 +169,11 @@ hr {
 }
 
 .top {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.bottom {
+  margin-bottom: 20px;
 }
 
 .grad {
@@ -179,6 +184,7 @@ li{
   align-items: center;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
+  margin: 0;
 }
 
 /* .grad-cap {
@@ -225,16 +231,15 @@ li{
   align-items: center;
 }
 
+.intro {
+  text-align: center;
+}
+
 .project-button-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-.last-project {
-  margin-bottom: 50px;
-}
-
 
 /* Footer */
 
@@ -245,5 +250,60 @@ li{
 @media only screen and (min-width: 600px) {
   .project-button {
     height: 50px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .app-wrapper {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 1fr 8fr;
+    grid-template-columns: 1fr 14fr;
+    grid-template-areas:
+      "nav main"
+      "nav body";
+  }
+  .main-name-wrapper {
+    height: 100%;
+    background-color: rgb(10, 126, 172);
+    grid-area: main;
+  }
+  .nav-column-wrapper {
+    justify-content: center;
+    grid-area: nav;
+  }
+  .nav-button {
+    margin-top: 80px;
+    padding: 40px 0px 40px 0px
+  }
+  .button-wrapper {
+    display: none;
+  }
+  .body-wrapper {
+    overflow-y: scroll;
+    grid-area: body;
+  }
+  .project-blurbs-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .blurb-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .project-button {
+    height: auto;
+  }
+  .center {
+    width: 30%;
+  }
+  .last-project {
+    margin-bottom: 20px !important;
+  }
+  .body-wrapper {
+    padding-bottom: 20px;
   }
 }
