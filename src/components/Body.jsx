@@ -13,7 +13,7 @@ export default function Body ({sections}) {
             <Topic>
                 <h1 className="topic-title" ref={sections.about}>Who Am I?</h1>
                 <p className="topic-paragraph">
-                    I am a Full Stack Software Engineer with an emphasis on the MERN stack and python-based web applications. I have a rigorous background in pure mathematics and extensive math tutoring experience. I aspire to change the world. Please delve into my <a href="https://github.com/Gathrazio" target="_blank">Github profile</a>, my <a href="https://www.linkedin.com/in/noahnsjensen/" target="_blank">LinkedIn profile</a>, or contact me via email at <a href="mailto: nnsjdev@gmail.com">nnsjdev@gmail.com</a>. I am able, willing, and experienced in adapting the value I can bring to any situation in any organization -- even yours!
+                    I am a Full Stack Software Engineer with an emphasis on the MERN stack and python-based web applications. I have a rigorous background in pure mathematics and extensive math tutoring experience. I aspire to change the world. Please delve into my <a href="https://github.com/Gathrazio" target="_blank">Github profile</a>, my <a href="https://www.linkedin.com/in/noahnsjensen/" target="_blank">LinkedIn profile</a>, my <a href="https://docs.google.com/document/d/1mkeZ5PxoV3V6DWyxU3rRNVX4k8-il0lh8j5l9hV9iqc/edit?usp=sharing" target="_blank">resume</a>, or contact me via email at <a href="mailto: nnsjdev@gmail.com">nnsjdev@gmail.com</a>. I am able, willing, and experienced in adapting the value I can bring to any situation in any organization -- even yours!
                 </p>
             </Topic>
             <hr />
