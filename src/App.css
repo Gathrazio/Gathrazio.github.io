@@ -231,6 +231,17 @@ li{
   align-items: center;
 }
 
+.blurb-description {
+  font-weight: 400;
+  text-align:left;
+  padding: 10px;
+}
+
+.description-bullet {
+  margin: 5px 30px 5px 30px;
+  font-weight: 500;
+}
+
 .intro {
   text-align: center;
 }
@@ -287,12 +298,11 @@ li{
   .project-blurbs-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
   }
   .blurb-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: left;
   }
   .project-button {
     height: auto;
