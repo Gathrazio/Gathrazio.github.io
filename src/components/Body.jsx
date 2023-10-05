@@ -146,17 +146,20 @@ export default function Body ({sections}) {
                     />
                     <ProjectBlurb
                         extraClass=""
-                        intro="Pure Javascript RPG in Node.js:" 
-                        secondButtonLink="https://github.com/Gathrazio/vs-assignments/tree/master/level-one/colossal-adventure-rpg"
+                        intro="Caesar Cipher Encryptor/Decryptor Utility in Node.js:"
+                        secondButtonLink="https://github.com/Gathrazio/vs-assignments/tree/master/level-three/caesar-cipher"
                         secondButtonText="View Code"
-                        description=""
+                        description="This JavaScript file is a shift cipher utility. One can ask it to decode a shift cipher assuming you know by how many letters a coded message is shifted, and one can ask it to also encode a message by shifting it some number of letters. This was a fun excursion into cryptography and its application using JS -- in particular, I gained experience in consecutively using array and string methods as well as using the ReadlineSync library."
+                        
                     />
                     <ProjectBlurb
                         extraClass="last-project"
-                        intro="Caesar Cipher Encryptor/Decryptor Utility in Node.js:"
-                        codeRef="https://github.com/Gathrazio/vs-assignments/tree/master/level-three/caesar-cipher"
-                        
+                        intro="Pure Javascript RPG in Node.js:" 
+                        secondButtonLink="https://github.com/Gathrazio/vs-assignments/tree/master/level-one/colossal-adventure-rpg"
+                        secondButtonText="View Code"
+                        description="When this JavaScript file is run in node, it takes the user on a whimsical journey in the command line full of brutal fights against monsters and the joys of collecting rare items. At approximately 1000 lines of code, this fully extracted application utilizes tensors to hold data about spawn rates, hero stat growth, item drop rates, and damage calculations. Also includes JavaScript recursion so that you can restart/play again however many times it is desired without having to run the file again. Uses ES6 JavaScript as much as possible while still keeping things understandable -- though this game is considerably complex regardless. There is an achievement for collecting every unique item -- do YOU have the courage to obtain it?"
                     />
+                    
                 </div>
             </Topic>
         </div>
