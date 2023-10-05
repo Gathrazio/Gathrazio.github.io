@@ -159,6 +159,15 @@ export default function Body ({sections}) {
                         secondButtonText="View Code"
                         description="When this JavaScript file is run in node, it takes the user on a whimsical journey in the command line full of brutal fights against monsters and the joys of collecting rare items. At approximately 1000 lines of code, this fully extracted application utilizes tensors to hold data about spawn rates, hero stat growth, item drop rates, and damage calculations. Also includes JavaScript recursion so that you can restart/play again however many times it is desired without having to run the file again. Uses ES6 JavaScript as much as possible while still keeping things understandable -- though this game is considerably complex regardless. There is an achievement for collecting every unique item -- do YOU have the courage to obtain it?"
                     />
+                    <ProjectBlurb 
+                        extraClass="last-project"
+                        intro="This portfolio site!"
+                        secondButtonLink="https://noahnjensen.dev"
+                        secondButtonText="Reload portfolio in new page"
+                        thirdButtonLink="https://github.com/Gathrazio/Gathrazio.github.io"
+                        thirdButtonText="View Code"
+                        description="I developed this portfolio site with the help of React.js and Vite. Feel free to peruse what makes this page run and how things are setup!"
+                    />
                     
                 </div>
             </Topic>
