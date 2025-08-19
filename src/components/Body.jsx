@@ -13,7 +13,7 @@ export default function Body ({sections}) {
             <Topic>
                 <h1 className="topic-title" ref={sections.about}>Who Am I?</h1>
                 <p className="topic-paragraph">
-                    I am a Full Stack Software Engineer with an emphasis on the MERN stack and python-based web applications. I have a rigorous background in pure mathematics and extensive math tutoring experience. I aspire to change the world. Please delve into my <a href="https://github.com/Gathrazio" target="_blank">Github profile</a>, my <a href="https://www.linkedin.com/in/noahnsjensen/" target="_blank">LinkedIn profile</a>, or contact me via email at <a href="mailto: nnsjdev@gmail.com">nnsjdev@gmail.com</a>. I am able, willing, and experienced in adapting the value I can bring to any situation in any organization -- even yours!
+                    I am a database-focused software engineer with professional, corporate experience building production-grade reporting software and MERN stack web applications. I have a rigorous background in pure mathematics and extensive math tutoring experience. I aspire to change the world. Please delve into my <a href="https://github.com/Gathrazio" target="_blank">Github profile</a>, my <a href="https://www.linkedin.com/in/noahnsjensen/" target="_blank">LinkedIn profile</a>, my <a href="https://docs.google.com/document/d/1OjUa585yqAKQq54bBOnD0xLCILb_dAjdFVEI7R0w4SM/edit?usp=sharing" target="_blank">resume</a>, or contact me via email at <a href="mailto: nnsjdev@gmail.com">nnsjdev@gmail.com</a>. I am eager to tackle data or software challenges in whatever form to systematically dismantle problems and provide world-class services.
                 </p>
             </Topic>
             <hr />
@@ -38,13 +38,13 @@ export default function Body ({sections}) {
                                 <SiFlask /> 
                             </div>
                             <div className="icon-block bottom">
-                                <SiLatex />
+                                <SiTailwindcss />
                                 <DiGit />
                                 <DiGithubBadge />
                             </div>
                         </IconContext.Provider>
                         <p className="topic-paragraph">
-                            I am fluent with the most recent iterations of Javascript, HTML, and CSS. I have also spent considerable time improving my skills with React.js, working with various backend technologies (like MongoDB, Node.js, Express.js, JWT authentication, and Python frameworks like Django, Flask). Throughout, I have effectively utilized Git and Github to work on personal and team projects. I also have over four years of intense practice in the math typesetting software LaTeX, and am fluent in a large swathe of collegiate mathematics. Really everything from statistics, linear algebra, calculus, number theory, discrete mathematics, and topology. My work in school focused on braids and knots, essentially combinatorial topology, and I spent considerable time building educational materials for calculus, statistics, and discrete math courses.
+                            I am most recently fluent with Python, T-SQL, & Microsoft SQL Server software. I have also spent considerable time improving my skills with React.js, working with various backend technologies (like MongoDB, GridFS, Node.js, Express.js, JWT authentication, O-Auth 2.0, and Python frameworks like Django & Flask). I have effectively utilized Git and Github to work on personal and production projects. I also have over four years of intense practice in the math typesetting software LaTeX, and have a deep understanding of upper division collegiate mathematics. Really everything from statistics, linear algebra, calculus, number theory, discrete mathematics, and topology. My work in school focused on braids and knots -- essentially combinatorial topology. I spent considerable time building educational materials for calculus, statistics, and discrete math courses.
                         </p>
                     </li>
                     <li>
@@ -66,7 +66,7 @@ export default function Body ({sections}) {
             <Topic>
                 <h1 className="topic-title" ref={sections.projects}>Projects</h1>
                 <p className="topic-paragraph">
-                            The live projects may take approximately 60 seconds to spin up due to the free hosting service's limitations. I built these projects during my 1000+ hour V School education and during the IBM 12-month backend development professional certificate. All of these projects (sans the Djirection site) were brainstormed, designed, implemented, debugged, and deployed by me alone. I learned many invaluable lessons about React component tree structure, the benefits and demerits of using React context, the appropriate usage patterns of React State, and intelligent utilizations of useEffect and other React hooks having to do with interacting with data.
+                            The live projects may take approximately 60 seconds to spin up due to the hosting service's limitations. I built these projects during my 1000+ hour V School education and during the IBM 12-month backend development professional certificate. All of these projects (sans the Djirection site) were brainstormed, designed, implemented, debugged, and deployed by me alone (i.e., no templates or UI libraries). I learned many invaluable lessons about React component tree structure, the benefits and demerits of using React context, the appropriate usage patterns of React State, and intelligent utilizations of useEffect and other React hooks having to do with interacting with data and controlling page views.
                 </p>
                 <div className="project-blurbs-wrapper">
                     <ProjectBlurb
@@ -153,11 +153,32 @@ export default function Body ({sections}) {
                         
                     />
                     <ProjectBlurb
-                        extraClass="last-project"
+                        extraClass=""
                         intro="Pure Javascript RPG in Node.js:" 
                         secondButtonLink="https://github.com/Gathrazio/vs-assignments/tree/master/level-one/colossal-adventure-rpg"
                         secondButtonText="View Code"
                         description="When this JavaScript file is run in node, it takes the user on a whimsical journey in the command line full of brutal fights against monsters and the joys of collecting rare items. At approximately 1000 lines of code, this fully extracted application utilizes tensors to hold data about spawn rates, hero stat growth, item drop rates, and damage calculations. Also includes JavaScript recursion so that you can restart/play again however many times it is desired without having to run the file again. Uses ES6 JavaScript as much as possible while still keeping things understandable -- though this game is considerably complex regardless. There is an achievement for collecting every unique item -- do YOU have the courage to obtain it?"
+                    />
+                    <ProjectBlurb
+                        extraClass=""
+                        intro="RPSLS: Extended rock-paper-scissors with React.js and TailwindCSS"
+                        projectName="RPSLS"
+                        firstButtonLink="https://rpsls-9kr3.onrender.com/"
+                        secondButtonLink="https://github.com/Gathrazio/rock-paper-scissors-lizard-spock"
+                        secondButtonText="View Code"
+                        description="This is a small mobile-friendly frontend site using React.js with Vite and TailwindCSS where one can play an extended version of rock-paper-scissors, called rock-paper-scissors-lizard-Spock, courtesy of Sam Kass & The Big Bang Theory."
+                        bullet1="The hands/moves and their relationships of this game describes a tournament (a complete oriented graph) on 5 vertices, and has 10 directed edges corresponding to the 10 rules of the game, as elucidated by Sheldon Cooper. Each hand has a score of 2, meaning each hand beats exactly two other hands. As each hand has the maximum score, each hand is a champion of this graph -- this essentially means the game is fair."
+                        bullet2="If you visit the site and play RPSLS many times against the house (which chooses its hand completely randomly), your win percentage will approach 40%. To see why this is the case, we can think of the game as a Bernoulli process or Bernoulli random variable -- a trial in which one either wins (produces a 1) or fails to win (produces a 0). Suppose you chose some hand out of the five -- it doesn't matter which. Since each hand has a score of 2, you will win if the house chooses 2 out of the 5 hands. So the probability of winning is 2/5, or 40%. In the case of Bernoulli random variables, the expected value is exactly this probability of success: 2/5. And it just so happens that the law of large numbers says that the average of the instances of a random variable, as the number of trials goes to infinity, will be close to and approach the expected value. Hence the first sentence of this paragraph makes sense."
+                        bullet3="Gained experience working with the TailwindCSS framework in a React.js setting."
+                    />
+                    <ProjectBlurb 
+                        extraClass="last-project"
+                        intro="This portfolio site!"
+                        secondButtonLink="https://noahnjensen.dev"
+                        secondButtonText="Reload portfolio in new page"
+                        thirdButtonLink="https://github.com/Gathrazio/Gathrazio.github.io"
+                        thirdButtonText="View Code"
+                        description="I developed this portfolio site with the help of React.js and Vite. Feel free to peruse what makes this page run and how things are setup!"
                     />
                     
                 </div>
